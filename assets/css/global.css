@@ -1,0 +1,36 @@
+:root {
+	/* Colors */
+	--hue-bleu: hsl(0, 50%, 50%);
+	--hue-vert: hsl(45, 50%, 50%);
+	
+	/* Gradient */
+	
+	/* Dimension */
+	--h-nav: 2rem;
+	--h-footer: 2rem;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100vw;
+	height: calc(100vh - ((var(--h-nav) + var(--h-footer))));
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
+	background: linear-gradient(45deg, var(--hue-bleu) 50%, var(--hue-vert) 100%);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+nav {
+	height: var(--h-nav);
+}
+
+footer {
+	height: var(--h-footer);
+}

@@ -30,6 +30,13 @@ body {
 nav {
 	height: var(--h-nav);
 }
+ul {
+	display: flex;
+}
+ul li {
+	list-style: none;
+	margin: 1rem;
+}
 
 footer {
 	height: var(--h-footer);
